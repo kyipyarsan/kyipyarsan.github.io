@@ -1,0 +1,155 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #f2f2f2;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: rgb(108, 109, 110);
+   
+}
+
+.container{
+	margin: auto;
+	width: 60%;		
+}
+.container1{
+	margin: auto;
+	width: 80%;
+	float: left;
+}
+/*header*/
+header h1{
+	text-transform: uppercase;
+	font-size: 25px;
+	color: rgb(98, 99, 100);
+	text-align: center;
+	margin-top: 50px;
+}
+header p{
+	font-size: 15px;
+	text-align: center;
+	color: rgb(97, 174, 174);
+}
+section#card{	
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    overflow-x: hidden;
+    background:#ffffff;   
+    border-radius: 30px;
+    padding-bottom: 30px;
+
+}
+section#card .full{
+	width: 100%;
+}
+section#card h3,p{
+	padding: 10px 50px;
+	line-height: 40px;
+	color: rgb(108, 109, 110);
+}
+footer{
+	font-size: 15px;
+	font-weight: 200;
+}
+footer .left-footer{
+	float: left;
+}
+footer .right-footer{
+	float: right;
+}
+aside{
+	width: 20%;
+	float: right;
+}
+aside ul {
+	list-style-type: none;
+	margin-top: 250px;
+}
+aside ul li {
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 200;
+
+}
+aside ul li a{
+	text-decoration: none;
+	 color: rgb(108, 109, 110);
+}
+aside ul li a:hover, aside .current a{
+	text-decoration: none;
+	color: rgb(0, 123, 255);
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto;
+	padding:0px 30px;
+	
+}
+.grid-container>img{
+	padding: 10px;
+	width: 100%;
+	height: 200px;
+}
+/*form*/
+
+input, textarea{
+	width: 80%;	
+	border: none;
+	border-bottom: 1px solid rgb(108, 109, 110);
+	padding: 20px;
+	margin: 20px;
+
+}
+.button-1{
+	width: 150px;
+	height: 50px;
+	background: #9999CC;
+	color:#ffffff;
+	padding: 20px;
+	float: right;
+	margin-right: 100px;
+	border: none;
+
+}
+.button-1:hover{
+	background:rgb(0, 123, 255) ;
+	border: none;
+}
+@media(max-width:768px)
+{
+
+	.container1,
+	.container,
+	.left-footer,
+	.right-footer
+
+	{
+		text-align: center;
+		float: none;
+		width: 100%;
+
+	}
+	aside{
+		text-align: left;
+		float: none;
+		width: 100%;
+	}
+	aside ul{		
+		margin-top: 20px;
+	}
+	.grid-container
+	{
+	display: grid;
+	grid-template-columns: auto;
+	padding:0px 30px;
+	margin-bottom:5px;
+	
+	}
+
+}
